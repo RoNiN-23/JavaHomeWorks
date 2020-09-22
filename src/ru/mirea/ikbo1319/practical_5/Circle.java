@@ -2,7 +2,7 @@ package ru.mirea.ikbo1319.practical_5;
 import java.lang.Math;
 
 public class Circle extends Shape {
-    double radius;
+    private double radius;
 
     public Circle(){}
     public Circle(double radius){

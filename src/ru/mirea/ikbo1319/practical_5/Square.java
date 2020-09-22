@@ -1,7 +1,7 @@
 package ru.mirea.ikbo1319.practical_5;
 
 public class Square extends Shape{
-    double side;
+    private double side;
 
     public Square(){}
 
