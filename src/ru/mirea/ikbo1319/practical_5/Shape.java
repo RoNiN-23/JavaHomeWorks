@@ -1,9 +1,15 @@
 package ru.mirea.ikbo1319.practical_5;
 
-public class Shape {
+public abstract class Shape {
     String color;
     boolean filled;
 
+    public  Shape(){};
+
+    public Shape(String color, boolean filled){
+        this.color = color;
+        this.filled = filled;
+    }
 
     public String getColor() {
         return color;
@@ -13,5 +19,16 @@ public class Shape {
         this.color = color;
     }
 
+    public boolean isFilled(){
+        return filled;
+    }
+
+    public void setFilled(boolean filled){
+        this.filled = filled;
+    }
+
+    public abstract double getArea();
+    public abstract double getPerimeter();
+    public abstract String toString();
 }
 
