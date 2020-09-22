@@ -33,8 +33,11 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return "Circle{" +
-                "radius=" + radius + ", Area=" + getArea() + ", Perimeter=" + getPerimeter() +
-                '}';
+        return "Circle - " +
+                "color=" + color +
+                ", " + isFilled() +
+                ", radius=" + radius +
+                ", Area=" + getArea() +
+                ", Perimeter=" + getPerimeter();
     }
 }

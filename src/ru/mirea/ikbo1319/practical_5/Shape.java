@@ -19,8 +19,9 @@ public abstract class Shape {
         this.color = color;
     }
 
-    public boolean isFilled(){
-        return filled;
+    public String isFilled(){
+        if(filled)return "фигуры заполнены";
+        else return "фигуры пустые";
     }
 
     public void setFilled(boolean filled){
