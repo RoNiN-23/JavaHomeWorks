@@ -16,4 +16,16 @@ public class Sofa extends Furniture{
     public void setFold(boolean fold) {
         this.fold = fold;
     }
+
+    @Override
+    public String toString() {
+        return "\nSofa{" +
+                ", color=" + getColor() +
+                ", material=" + getMaterial() +
+                ", height=" + getHeight() +
+                ", width=" + getWidth() +
+                ", long=" + getLonG() +
+                ", fold=" + isFold() +
+                '}'+"\n";
+    }
 }

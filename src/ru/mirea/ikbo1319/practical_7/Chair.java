@@ -1,6 +1,6 @@
 package ru.mirea.ikbo1319.practical_7;
 
-public class Chair extends Furniture{
+public class Chair extends Furniture {
     private int numOfLegs;
 
     public Chair(String color, String material, double height, double width, double lonG, int numOfLegs) {
@@ -14,5 +14,17 @@ public class Chair extends Furniture{
 
     public void setNumOfLegs(int numOfLegs) {
         this.numOfLegs = numOfLegs;
+    }
+
+    @Override
+    public String toString() {
+        return "\nChair{" +
+                ", color=" + getColor() +
+                ", material=" + getMaterial() +
+                ", height=" + getHeight() +
+                ", width=" + getWidth() +
+                ", long=" + getLonG() +
+                ", numOfLegs=" + numOfLegs +
+                '}'+"\n";
     }
 }

@@ -15,4 +15,16 @@ public class Table extends Furniture {
     public void setNumOfLegs(int numOfLegs) {
         this.numOfLegs = numOfLegs;
     }
+
+    @Override
+    public String toString() {
+        return "\nTable{" +
+                ", color=" + getColor() +
+                ", material=" + getMaterial() +
+                ", height=" + getHeight() +
+                ", width=" + getWidth() +
+                ", long=" + getLonG() +
+                ", numOfLegs=" + numOfLegs +
+                '}'+"\n";
+    }
 }

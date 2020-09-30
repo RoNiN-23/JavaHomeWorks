@@ -24,4 +24,17 @@ public class Wardrobe extends Furniture{
     public void setNumOfDoors(int numOfDoors) {
         this.numOfDoors = numOfDoors;
     }
+
+    @Override
+    public String toString() {
+        return "\nWordrobe{" +
+                ", color=" + getColor() +
+                ", material=" + getMaterial() +
+                ", height=" + getHeight() +
+                ", width=" + getWidth() +
+                ", long=" + getLonG() +
+                ", numOfShelves=" + numOfShelves +
+                ", numOfDoors=" + numOfDoors +
+                '}'+"\n";
+    }
 }
