@@ -27,7 +27,7 @@ public class Wardrobe extends Furniture{
 
     @Override
     public String toString() {
-        return "\nWordrobe{" +
+        return "\nWardrobe{" +
                 ", color=" + getColor() +
                 ", material=" + getMaterial() +
                 ", height=" + getHeight() +
