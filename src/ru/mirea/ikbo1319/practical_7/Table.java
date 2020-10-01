@@ -25,6 +25,6 @@ public class Table extends Furniture {
                 ", width=" + getWidth() +
                 ", long=" + getLonG() +
                 ", numOfLegs=" + numOfLegs +
-                '}'+"\n";
+                '}' + "\n";
     }
 }

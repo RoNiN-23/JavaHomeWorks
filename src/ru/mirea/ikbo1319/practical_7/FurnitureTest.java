@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class FurnitureTest {
     public static void main(String[] args) {
-        int num1,num2;
+        int num1, num2;
 
         FurnitureShop furnitureShop = new FurnitureShop();
         Chair chair1 = new Chair("белый, чёрный", "берёза, велюр", 100, 40, 52, 4);
@@ -44,7 +44,7 @@ public class FurnitureTest {
         Person person = new Person();
         Scanner scanner = new Scanner(System.in);
         num1 = 10;
-        while (num1!=0) {
+        while (num1 != 0) {
             System.out.println("Выберите что вы хотите\n1.Шкаф\n2.Стол\n3.Стул\n4.Диван\n0.Выйти из магазина");
             num1 = scanner.nextInt();
             switch (num1) {
@@ -115,7 +115,8 @@ public class FurnitureTest {
             }
         }
         System.out.println("Корзина");
-
+        System.out.println("============================================================================================================================");
         person.showPerson();
+        System.out.println("============================================================================================================================");
     }
 }

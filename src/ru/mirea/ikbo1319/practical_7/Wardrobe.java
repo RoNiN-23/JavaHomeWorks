@@ -1,6 +1,6 @@
 package ru.mirea.ikbo1319.practical_7;
 
-public class Wardrobe extends Furniture{
+public class Wardrobe extends Furniture {
     private int numOfShelves, numOfDoors;
 
     public Wardrobe(String color, String material, double height, double width, double lonG, int numOfShelves, int numOfDoors) {
@@ -35,6 +35,6 @@ public class Wardrobe extends Furniture{
                 ", long=" + getLonG() +
                 ", numOfShelves=" + numOfShelves +
                 ", numOfDoors=" + numOfDoors +
-                '}'+"\n";
+                '}' + "\n";
     }
 }
