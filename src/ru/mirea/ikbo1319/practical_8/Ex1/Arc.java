@@ -3,16 +3,34 @@ package ru.mirea.ikbo1319.practical_8.Ex1;
 import java.awt.*;
 import java.util.Random;
 
-
-public class Square extends Shape {
-    private int side;
-
+public class Arc extends Shape {
+    private int arc, start, width,height;
 
 
-    public int getSide() {
+    @Override
+    public int getHeight() {
         Random random = new Random();
-        side = random.nextInt(200)+50;
-        return side;
+        height = random.nextInt(200)+50;
+        return height;
+    }
+
+    @Override
+    public int getWidth() {
+        Random random = new Random();
+        width = random.nextInt(200)+50;
+        return width;
+    }
+
+    public int getArc() {
+        Random random = new Random();
+        arc = random.nextInt(359)+1;
+        return arc;
+    }
+
+    public int getStart() {
+        Random random = new Random();
+        start = random.nextInt(180)+20;
+        return start;
     }
 
     @Override
