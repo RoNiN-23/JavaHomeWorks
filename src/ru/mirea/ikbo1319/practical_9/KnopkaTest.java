@@ -1,9 +1,8 @@
-package ru.mirea.ikbo1319.Practical_9;
+package ru.mirea.ikbo1319.practical_9;
 
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 
 public class KnopkaTest extends JFrame {
     public static void main(String[] args) {

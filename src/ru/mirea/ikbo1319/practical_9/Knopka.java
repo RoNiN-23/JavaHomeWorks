@@ -1,4 +1,4 @@
-package ru.mirea.ikbo1319.Practical_9;
+package ru.mirea.ikbo1319.practical_9;
 
 
 import ru.mirea.ikbo1319.practical_8.Ex1.Paint;
