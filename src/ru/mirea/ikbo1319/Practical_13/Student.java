@@ -1,9 +1,9 @@
 package ru.mirea.ikbo1319.Practical_13;
 
 public class Student {
-    int iDNumber;
-    String name, surname, patronymic;
-    double middleMark;
+    private int iDNumber;
+    private String name, surname, patronymic;
+    private double middleMark;
 
     public Student(int iDNumber, String surname, String name, String patronymic, double middleMark) {
         this.iDNumber = iDNumber;
@@ -14,6 +14,22 @@ public class Student {
     }
 
     public Student() {
+    }
+
+    public int getiDNumber() {
+        return iDNumber;
+    }
+
+    public void setiDNumber(int iDNumber) {
+        this.iDNumber = iDNumber;
+    }
+
+    public double getMiddleMark() {
+        return middleMark;
+    }
+
+    public void setMiddleMark(double middleMark) {
+        this.middleMark = middleMark;
     }
 
     public String getName() {

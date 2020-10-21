@@ -8,10 +8,10 @@ public class SortingStudentsByGPA implements Comparator<Student> {
 
     @Override
     public int compare(Student s1, Student s2) {
-        if (s1.middleMark == s2.middleMark) {
+        if (s1.getMiddleMark() == s2.getMiddleMark()) {
             return 0;
         }
-        if (s1.middleMark < s2.middleMark) {
+        if (s1.getMiddleMark() < s2.getMiddleMark()) {
             return 1;
         }
         else {
