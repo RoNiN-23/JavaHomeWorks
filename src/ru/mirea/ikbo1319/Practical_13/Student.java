@@ -1,12 +1,16 @@
 package ru.mirea.ikbo1319.Practical_13;
 
 public class Student {
+    int iDNumber;
     String name, surname, patronymic;
+    double middleMark;
 
-    public Student(String surname, String name, String patronymic) {
+    public Student(int iDNumber, String surname, String name, String patronymic, double middleMark) {
+        this.iDNumber = iDNumber;
         this.surname = surname;
         this.name = name;
         this.patronymic = patronymic;
+        this.middleMark = middleMark;
     }
 
     public Student() {
@@ -38,9 +42,11 @@ public class Student {
 
     @Override
     public String toString() {
-        return " " + surname +
+        return  " " + iDNumber +
+                " " + surname +
                 " " + name +
-                " " + patronymic;
+                " " + patronymic +
+                " " + middleMark + "\n";
     }
 }
 

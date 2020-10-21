@@ -9,9 +9,6 @@ public class Marks {
         }
         mark = mark/marks.length;
     }
-    public Marks() {
-    }
-
 
     public double getMark() {
         return mark;
