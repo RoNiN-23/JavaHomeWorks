@@ -1,19 +1,19 @@
 package ru.mirea.ikbo1319.Practical_15;
 
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
 public class CollectionTest {
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<>();
-        ArrayList<Integer> help = new ArrayList<>();
+        int[] numbers = new int[10];
+        int[] help;
+        int size = 0;
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 10; i++) {
-            numbers.add(random.nextInt(10) + 1);
+            numbers[i] = random.nextInt(10) + 1;
         }
-        /*int size = numbers.size();*/
+
         int sw = 1;
         Choice choice = new Choice();
         while (sw != 0) {
@@ -22,26 +22,43 @@ public class CollectionTest {
             sw = scanner.nextInt();
             switch (sw) {
                 case 1:
-                    choice.addNumber(numbers);
+                    size = numbers.length + 1;
+                    help = new int[numbers.length + 1];
+                    help = choice.addNumber(numbers);
+                    numbers = new int[size];
+                    numbers = help;
                     break;
                 case 2: {
+                    size = numbers.length - 1;
+                    help = new int[numbers.length - 1];
                     help = choice.delNumber(numbers);
-                    numbers = new ArrayList<>();
+                    numbers = new int[size];
                     numbers = help;
                 }
-                case 3: System.out.println("Нужный элемент находится по номеру -> "+ choice.foundNum(numbers));
+                break;
+                case 3:
+                    System.out.println("Нужный элемент находится по номеру -> " + choice.foundNum(numbers));
                     break;
-                case 4: System.out.println("Нужный индекс -> "+ choice.foundIndex(numbers));
+                case 4:
+                    System.out.println("Нужный индекс -> " + choice.foundIndex(numbers));
                     break;
-                case 5:System.out.println("Максимальный элемент -> "+ choice.max(numbers));
+                case 5:
+                    System.out.println("Максимальный элемент -> " + choice.max(numbers));
                     break;
-                case 6:System.out.println("Минимальный элемент -> "+ choice.min(numbers));
+                case 6:
+                    System.out.println("Минимальный элемент -> " + choice.min(numbers));
                     break;
-                case 7:System.out.println("Среднее арифметическое -> "+ choice.middle(numbers));
+                case 7:
+                    System.out.println("Среднее арифметическое -> " + choice.middle(numbers));
                     break;
-                case 8:
-                    System.out.println(numbers);
-                    break;
+                case 8: {
+                    for (int i = 0; i < numbers.length; i++) {
+                        System.out.print(numbers[i] + " ");
+                    }
+                    System.out.println();
+                }
+                ;
+                break;
                 case 0:
                     break;
                 default:
